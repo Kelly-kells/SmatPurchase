@@ -8,13 +8,13 @@ import {
   IconButton,
 } from "@mui/material";
 import AddShoppingCart from "@mui/icons-material/AddShoppingCart";
-import useStyles from "@mui/styles";
+import {makeStyles} from "@mui/styles";
 
 const Product = ({ product }) => {
-  const classes = useStyles();
+  const classes = makeStyles();
   return (
     <Card className={classes.root}>
-      <CardMedia className={classes.media} image="" title={product.name} />
+      <CardMedia className={classes.media} component="img" image={product.image} title={product.name} />
       <CardContent>
         <div className={classes.cardComponent}>
           <Typography varient="h5" gutterBottom>
@@ -22,7 +22,7 @@ const Product = ({ product }) => {
           </Typography>
           <Typography varient="h5">{product.price}</Typography>
         </div>
-        <Typography variant="h2" color="textSecondary">
+        <Typography variant="body2" color="textSecondary">
           {product.description}
         </Typography>
       </CardContent>
