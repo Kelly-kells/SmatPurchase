@@ -14,6 +14,14 @@ const Navbar = () => {
             <StorefrontIcon height="20px" className={classes.image} color="fcf300" />
             MajorMart
             </Typography>
+            <div  className={classes.grow}/>
+            <div className={classes.button}> 
+            <IconButton aria-label='show Cart Item' color='inherit'>
+           <Badge badgeContent={2} color="secondary">
+            <ShoppingCart/>
+           </Badge>
+            </IconButton> 
+            </div>
         </ToolBar>
 
 
