@@ -15,7 +15,7 @@ const Product = ({ product }) => {
   return (
     <Card className={classes.root}>
       <CardMedia className={classes.media} component="img" image={product.image} title={product.name} />
-      <CardContent>
+      <CardContent >
         <div className={classes.cardComponent}>
           <Typography varient="h5" gutterBottom>
             {product.name}

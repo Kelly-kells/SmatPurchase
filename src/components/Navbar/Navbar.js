@@ -9,25 +9,28 @@ import {
   Typography,
 } from "@mui/material";
 import { ShoppingCart } from "@mui/icons-material";
-import { styled } from "@mui/styles";
+
 import StorefrontIcon from "@mui/icons-material/Storefront";
 
 const Navbar = () => {
-  const classes = styled();
+  
   return (
     <div>
-      <AppBar position="fixed" className={classes.appBar} color="inherit">
+      <AppBar style={{ background: 'white' }} sm={{width:" 100%", boxShadow: "none",borderBottom: "1px solid rgba(0, 0, 0, 0.12)", color: "black"} }>
         <Toolbar>
-          <Typography variant="h6" className={classes.tittle} color="inherit">
+          <Typography variant="h6" color="black" sm={{flexGrow: 1,
+    alignItems: "center",
+    display: "flex",
+    textDecoration: "none",}}>
             <StorefrontIcon
               height="20px"
-              className={classes.image}
+              ml="10px"
               color="secondary"
             />
             MajorMart
           </Typography>
-          <div className={classes.grow} />
-          <div className={classes.button}>
+          <div sm={{ flexGrow: 1 }} />
+          <div >
             <IconButton aria-label="show Cart Item" color="inherit">
               <Badge badgeContent={2} color="secondary">
                 <ShoppingCart />
