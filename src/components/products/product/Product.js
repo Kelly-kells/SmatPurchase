@@ -8,15 +8,17 @@ import {
   IconButton,
 } from "@mui/material";
 import AddShoppingCart from "@mui/icons-material/AddShoppingCart";
-import {styled} from "@mui/styles"
+
 
 const Product = ({ product }) => {
-  const classes =styled();
+ 
   return (
-    <Card className={classes.root}>
-      <CardMedia className={classes.media} component="img" image={product.image} title={product.name} />
-      <CardContent >
-        <div className={classes.cardComponent}>
+    <Card style={{ maxWidth: '100%'}}>
+      <CardMedia style={{height: 100,
+      paddingTop: '56.25%'}} component="img" image={product.image} title={product.name} />
+      <CardContent  style={{display: 'flex',
+      justifyContent: 'space-between'}}>
+        <div >
           <Typography varient="h5" gutterBottom>
             {product.name}
           </Typography>
@@ -26,7 +28,8 @@ const Product = ({ product }) => {
           {product.description}
         </Typography>
       </CardContent>
-      <CardActions disableSpacing className={classes.cardActions}>
+      <CardActions disableSpacing style={{display: 'flex',
+      justifyContent: 'flex-end'}}>
         <IconButton aria-label="Add to cart">
           <AddShoppingCart />
         </IconButton>
