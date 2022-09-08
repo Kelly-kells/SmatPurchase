@@ -1,7 +1,4 @@
-import { makeStyles } from '@mui/styles';
-
-
-export default useStyles = makeStyles(()=>({
+/*
     root: {
         maxWidth: '100%',
       },
@@ -17,9 +14,9 @@ export default useStyles = makeStyles(()=>({
         display: 'flex',
         justifyContent: 'space-between',
       },
-})
+    */
 
-)
+
 
 
     

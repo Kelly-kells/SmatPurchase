@@ -1,5 +1,7 @@
 import React from 'react'
-import Grid from "@mui/material"
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 import Product from './Product/Product'
 
 const products = [{
@@ -13,13 +15,13 @@ const Products = () => {
 
   return (
     <main>
-      <Grid container justifyContent="center" spacing={4}>
+      <Container justifyContent="center" spacing={4}>
  {products.map((product)=>(
-  <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
+  <Row key={product.id} xs={12} sm={6} md={4} lg={3}>
     <Product product={product}/>
-    </Grid>
+    </Row>
  ))}
-      </Grid>
+      </Container>
     </main>
   )
 }

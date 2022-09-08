@@ -1,29 +1,28 @@
 import React from 'react'
-import { Card, CardMedia, CardContent, Typography, CardActions, IconButton } from "@mui/material"
-import { AddShoppingCart } from "@mui/icons-material"
-import useStyles from "./ProductStyle"
+import Card from 'react-bootstrap/Card';
+
+
 
 const Product = ({ product }) => {
-    const classes= useStyles()
+    
     return (
-        <Card className={classes.root}>
-            <CardMedia className={classes.media} image="" title={product.name} />
-            <CardContent>
-                <div className={classes.CardContent}>
-                    <Typography varient="h5" gutterBottom>
+        <Card className="">
+            <Card.Image image="" title={product.name} />
+            <Card.Body>
+                <Card.Title>
+                    <h6 >
                         {product.name}
-                    </Typography>
-                    <Typography varient="h5" >
+                    </h6>
+                    <h6  >
                         {product.price}
-                    </Typography>
-                </div>
-                <Typography varient="h5" color="textSecondary" >
+                    </h6>
+                </Card.Title>
+                <Card.Text >
                     {product.description}
-                </Typography>
-            </CardContent>
-            <CardActions disableSpacing className={classes.cardActions}>
-                <IconButton aria-label='Add to cart'> < AddShoppingCart /></IconButton>
-            </CardActions>
+                </Card.Text>
+            </Card.Body>
+            
+            
         </Card>
     )
 }
