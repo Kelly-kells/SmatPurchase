@@ -1,0 +1,7 @@
+.Card{
+    max-width: 100%;
+}
+.cardBody{
+    display: flex;
+    justify-content: space-between;
+}

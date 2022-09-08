@@ -1,15 +1,17 @@
 import React from 'react'
 import Card from 'react-bootstrap/Card';
-
+import Button from 'react-bootstrap/Button';
+import {MdOutlineAddShoppingCart} from "react-icons/md"
 
 
 const Product = ({ product }) => {
     
     return (
-        <Card className="">
-            <Card.Image image="" title={product.name} />
-            <Card.Body>
-                <Card.Title>
+        
+        <Card  className='Card' style={{ width: '100%', justifyContent: "center" }}>
+            <Card.Img varient="top" src="" title={product.name} />
+            <Card.Body className='cardBody'>
+                <Card.Title className='cardTitle'>
                     <h6 >
                         {product.name}
                     </h6>
@@ -22,8 +24,9 @@ const Product = ({ product }) => {
                 </Card.Text>
             </Card.Body>
             
-            
+            <Button aria-label='Add to cart'> <MdOutlineAddShoppingCart /></Button>
         </Card>
+        
     )
 }
 
