@@ -1,7 +1,7 @@
-.Card{
-    max-width: 100%;
+.card{
+    justify-content: center !important;
 }
-.cardBody{
+.card.Body{
     display: flex;
     justify-content: space-between;
 }

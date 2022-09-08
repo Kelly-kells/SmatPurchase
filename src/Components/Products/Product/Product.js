@@ -4,11 +4,12 @@ import Button from 'react-bootstrap/Button';
 import {MdOutlineAddShoppingCart} from "react-icons/md"
 
 
+
 const Product = ({ product }) => {
     
     return (
         
-        <Card  className='Card' style={{ width: '100%', justifyContent: "center" }}>
+        <Card  className='card' >
             <Card.Img varient="top" src="" title={product.name} />
             <Card.Body className='cardBody'>
                 <Card.Title className='cardTitle'>
