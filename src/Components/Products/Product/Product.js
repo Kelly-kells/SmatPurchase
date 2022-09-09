@@ -9,7 +9,7 @@ const Product = ({ product }) => {
     
     return (
         
-        <Card  className='card' >
+        <Card  className='card'style={{display: "flex"}} >
             <Card.Img varient="top" src="" title={product.name} />
             <Card.Body className='cardBody'>
                 <Card.Title className='cardTitle'>
