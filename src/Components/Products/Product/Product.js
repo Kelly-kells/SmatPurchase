@@ -11,7 +11,7 @@ const Product = ({ product }) => {
 
         <Card className='card' style={{ width: "18rem" }}>
             <Card.Img varient="top" src="" title={product.name} />
-            <Card.Body className='cardBody' style={{ display: "flex", margin: "10px" }}>
+            <Card.Body className='cardBody'>
                 <Card.Title className='cardTitle'>
                     <h6 >
                         {product.name}

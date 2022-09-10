@@ -3,12 +3,14 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Product from './Product/Product';
+import macbook from "../assets/macbook.png"
+import watch from "../assets/watch.png"
 
 const products = [{
-  id: 1, name: "watch", description: "standard classy watch", price: "50$"
+  id: 1, name: "watch", description: "standard classy watch", price: "50$", Image: {macbook}
 
 },
-{ id: 2, name: "macbook", description: "apple macbook", price: "50$" }
+{ id: 2, name: "macbook", description: "apple macbook", price: "50$", Image: {watch} }
 ]
 
 const Products = () => {
@@ -19,7 +21,7 @@ const Products = () => {
         {products.map((product) => (
           <Row key={product.id} xs={12} sm={6} md={4} lg={3} >
 
-            <Col >
+            <Col sm={6}>
               <Product product={product} />
             </Col>
           </Row>
