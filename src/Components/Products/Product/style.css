@@ -1,7 +1,8 @@
-.card{
+.card {
+    display: flex !important;
     justify-content: center !important;
 }
 .card.Body{
     display: flex;
-    justify-content: space-between;
+    padding: 10px;
 }
