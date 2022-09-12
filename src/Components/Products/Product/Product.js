@@ -9,11 +9,11 @@ const Product = ({ product }) => {
 
     return (
 
-        <Card className='card' style={{ width: "18rem" }}>
-            <Card.Img varient="top" src={product.image} title={product.name} />
+        <Card className='card' style={{ width: "15rem"}}>
+            <Card.Img    src={product.img} alt={product.name} />
             <Card.Body className='cardBody'>
                 <Card.Title className='cardTitle'>
-                    <h6 >
+                    <h6>
                         {product.name}
                     </h6>
                     <h6  >
