@@ -10,7 +10,7 @@ const Product = ({ product }) => {
     return (
 
         <Card className='card' style={{ width: "18rem" }}>
-            <Card.Img varient="top" src="" title={product.name} />
+            <Card.Img varient="top" src={product.image} title={product.name} />
             <Card.Body className='cardBody'>
                 <Card.Title className='cardTitle'>
                     <h6 >
@@ -20,12 +20,12 @@ const Product = ({ product }) => {
                         {product.price}
                     </h6>
                 </Card.Title>
-                <Card.Text >
+                <Card.Text varient="h4" >
                     {product.description}
                 </Card.Text>
             </Card.Body>
 
-            <Button aria-label='Add to cart'> <MdOutlineAddShoppingCart /></Button>
+            <Button className='btn'> <MdOutlineAddShoppingCart /></Button>
         </Card>
 
     )
