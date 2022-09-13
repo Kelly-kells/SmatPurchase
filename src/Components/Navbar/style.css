@@ -1,0 +1,17 @@
+.nav {
+    background-color: green !important;
+}
+
+.logo {
+    width: 50px !important;
+}
+
+.badge {
+    color: cyan;
+    font-size: 30px;
+    background-color: green !important;
+}
+
+.badge span {
+    font-size: 20px;
+}
