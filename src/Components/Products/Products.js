@@ -17,9 +17,9 @@ const Products = () => {
 
   return (
     <main>
-      <Container justifyContent="center" spacing={4} style={{ display: "flex" }}>
+      <Container justifyContent="center" style={{ display: "flex", flexWrap:"wrap" }} >
         {products.map((product) => (
-          <Row key={product.id} xs={12} sm={12}>
+          <Row key={product.id} md={6} sm={12}  >
 
             <Col >
               <Product product={product} />

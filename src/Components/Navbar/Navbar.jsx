@@ -9,7 +9,7 @@ import "./style.css"
 
 function CollapsibleExample() {
   return (
-    <Navbar className='nav' collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar className='nav' collapseOnSelect expand="lg" bg="dark" variant="dark ">
       <Container>
         <Navbar.Brand className='logo' ><FcShop /></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -24,7 +24,7 @@ function CollapsibleExample() {
             <Nav.Link eventKey={2} href="#memes">
               Dank memes
             </Nav.Link>
-            <Badge pill className='badge'> <MdOutlineAddShoppingCart /><span>2</span></Badge>
+            <Badge pill badgeContent={2} className='badge'> <MdOutlineAddShoppingCart /></Badge>
           </Nav>
         </Navbar.Collapse>
       </Container>
