@@ -24,7 +24,7 @@ function CollapsibleExample() {
             <Nav.Link eventKey={2} href="#memes">
               Dank memes
             </Nav.Link>
-            <Badge pill badgeContent={2} className='badge'> <MdOutlineAddShoppingCart /></Badge>
+            <Badge pill badgecontent={2} className='badge'> <MdOutlineAddShoppingCart /></Badge>
           </Nav>
         </Navbar.Collapse>
       </Container>

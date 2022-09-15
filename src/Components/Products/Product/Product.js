@@ -9,15 +9,15 @@ const Product = ({ product }) => {
 
     return (
 
-        <Card className='card' style={{ width: "15rem"}}>
-            <Card.Img    src={product.img} alt={product.name} />
+        <Card className='card' style={{ width: "18rem" }}>
+            <Card.Img src={product.image?.url} alt={product.name} />
             <Card.Body className='cardBody'>
                 <Card.Title className='cardTitle'>
                     <h6>
                         {product.name}
                     </h6>
                     <h6  >
-                        {product.price}
+                        {product.price.formatted_with_symbol}
                     </h6>
                 </Card.Title>
                 <Card.Text varient="h4" >

@@ -1,14 +1,14 @@
 .card {
-margin: 10px  !important;
-border: 1px grey solid !important;
+    margin: 10px !important;
+
 }
 
 
-.cardTitle{
+.cardTitle {
     display: flex;
     justify-content: space-between;
 }
-.btn{
+
+.btn {
     background-color: #386641 !important;
 }
-

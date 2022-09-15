@@ -3,17 +3,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Product from './Product/Product';
-import watch from "../../Components/assets/watch.png"
-import macbook from "../../Components/assets/macbook.png"
 
-const products = [{
-  id: 1, name: "watch", description: "standard classy watch", price: "50$", img: macbook
 
-},
-{ id: 2, name: "macbook", description: "apple macbook", price: "50$", img: watch  }
-]
 
-const Products = () => {
+
+const Products = ({products}) => {
 
   return (
     <main>
