@@ -9,7 +9,7 @@ const Product = ({ product }) => {
 
     return (
 
-        <Card className='card' style={{ width: "18rem" }}>
+        <Card className='card animate__animated animate__shakeX ' style={{ width: "13rem", height: "100%" }}>
             <Card.Img src={product.image?.url} alt={product.name} />
             <Card.Body className='cardBody'>
                 <Card.Title className='cardTitle'>
@@ -20,13 +20,13 @@ const Product = ({ product }) => {
                         {product.price.formatted_with_symbol}
                     </h6>
                 </Card.Title>
-                <Card.Text varient="h4" >
-                    {product.description}
-                </Card.Text>
+                <Card.Text varient="h4" dangerouslySetInnerHTML={{__html: product.description}} />
+                 
+               
             </Card.Body>
 
             <Button className='btn'> <MdOutlineAddShoppingCart /></Button>
-        </Card>
+        </Card> 
 
     )
 }

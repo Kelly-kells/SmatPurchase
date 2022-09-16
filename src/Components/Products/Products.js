@@ -7,11 +7,11 @@ import Product from './Product/Product';
 
 
 
-const Products = ({products}) => {
+const Products = ({ products }) => {
 
   return (
     <main>
-      <Container justifyContent="center" style={{ display: "flex", flexWrap:"wrap" }} >
+      <Container justifycontent="center" style={{ display: "flex", flexWrap: "wrap" }} >
         {products.map((product) => (
           <Row key={product.id} md={6} sm={12}  >
 
