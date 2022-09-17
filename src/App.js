@@ -8,15 +8,26 @@ import { useState,useEffect } from 'react'
 const App = () => {
 
   const[products, setProducts]=useState([])
+ 
+  const[cart, setCart]=useState({})
+
 
   const fetchProducts= async()=>{
     const {data} = await commerce.products.list()
 
     setProducts(data)
   }
-  console.log (products)
+
+  const fetchCart = async()=>{
+    setCart = (await commerce.cart.retrieve());
+
+
+    setCart(cart)
+  }
+  console.log(cart)
   useEffect(()=>{
     fetchProducts()
+    fetchCart()
   },[])
   
   return (
