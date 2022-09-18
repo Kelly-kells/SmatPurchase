@@ -5,7 +5,7 @@ import { MdOutlineAddShoppingCart } from "react-icons/md"
 import "./style.css"
 
 
-const Product = ({ product }) => {
+const Product = ({ product, onAddToCart }) => {
 
     return (
 
@@ -20,13 +20,13 @@ const Product = ({ product }) => {
                         {product.price.formatted_with_symbol}
                     </h6>
                 </Card.Title>
-                <Card.Text varient="h4" dangerouslySetInnerHTML={{__html: product.description}} />
-                 
-               
+                <Card.Text varient="h4" dangerouslySetInnerHTML={{ __html: product.description }} />
+
+
             </Card.Body>
 
-            <Button className='btn'> <MdOutlineAddShoppingCart /></Button>
-        </Card> 
+            <Button className='btn' onClick={() => onAddToCart(product.id, 1)}> <MdOutlineAddShoppingCart /></Button>
+        </Card>
 
     )
 }

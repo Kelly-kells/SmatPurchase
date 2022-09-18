@@ -7,7 +7,7 @@ import Product from './Product/Product';
 
 
 
-const Products = ({ products }) => {
+const Products = ({ products, onAddToCart }) => {
 
   return (
     <main>
@@ -16,7 +16,7 @@ const Products = ({ products }) => {
           <Row key={product.id} md={6} sm={12}  >
 
             <Col >
-              <Product product={product} />
+              <Product product={product} onAddToCart={onAddToCart} />
             </Col>
           </Row>
         ))}
