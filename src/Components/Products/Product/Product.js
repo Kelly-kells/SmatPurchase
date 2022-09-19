@@ -7,6 +7,8 @@ import "./style.css"
 
 const Product = ({ product, onAddToCart }) => {
 
+    const handleAddToCart = () => onAddToCart(product.id, 1);
+
     return (
 
         <Card className='card animate__animated animate__shakeX ' style={{ width: "13rem", height: "100%" }}>
@@ -20,13 +22,13 @@ const Product = ({ product, onAddToCart }) => {
                         {product.price.formatted_with_symbol}
                     </h6>
                 </Card.Title>
-                <Card.Text varient="h4" dangerouslySetInnerHTML={{ __html: product.description }} />
-
-
+                <Card.Text varient="h4" dangerouslySetInnerHTML={{__html: product.description}} />
+                 
+               
             </Card.Body>
 
-            <Button className='btn' onClick={() => onAddToCart(product.id, 1)}> <MdOutlineAddShoppingCart /></Button>
-        </Card>
+            <Button className='btn' onClick={handleAddToCart}> <MdOutlineAddShoppingCart /></Button>
+        </Card> 
 
     )
 }

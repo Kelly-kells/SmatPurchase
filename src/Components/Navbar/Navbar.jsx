@@ -7,7 +7,7 @@ import Badge from 'react-bootstrap/Badge';
 import "./style.css"
 
 
-function CollapsibleExample({ totalItems }) {
+function CollapsibleExample({totalItems}) {
   return (
     <Navbar className='nav' collapseOnSelect expand="lg" bg="dark" variant="dark ">
       <Container>
@@ -24,7 +24,7 @@ function CollapsibleExample({ totalItems }) {
             <Nav.Link eventKey={2} href="#memes">
               Dank memes
             </Nav.Link>
-            <Badge pill className='badge'  > <MdOutlineAddShoppingCart /><span></span> </Badge>
+            <Badge pill className='badge'  > <MdOutlineAddShoppingCart /><span>{totalItems}</span>  </Badge>
           </Nav>
         </Navbar.Collapse>
       </Container>
