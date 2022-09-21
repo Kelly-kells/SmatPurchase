@@ -9,7 +9,6 @@ import Product from './Product/Product';
 
 const Products = ({ products, onAddToCart }) => {
 
- 
   return (
     <main>
       <Container  style={{ display: "flex", flexWrap: "wrap",justifyContent:"center" }} >

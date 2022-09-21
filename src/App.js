@@ -9,7 +9,7 @@ const App = () => {
 
   const [products, setProducts] = useState([])
 
-  const [cart, setCart] = useState({})
+  const [cart, setCart] = useState()
 
 
   const fetchProducts = async () => {
@@ -25,9 +25,11 @@ const App = () => {
   }
   
   const handleAddToCart = (productId, quantity) => {
-    commerce.cart.add(productId, quantity).then((item) => {
-      setCart(item.cart);
-    })
+    commerce.cart.add(productId, quantity).then((cart) => {
+      setCart(cart);
+    }).catch((error) => {
+      console.error('There was an error adding the item to the cart', error);
+    });
   }
 
 console.log(cart)
@@ -39,7 +41,7 @@ console.log(cart)
 
   return (
     <div>
-      <Navbar fixed="top"  totalItems= {cart.total_items}/>
+      <Navbar fixed="top"  totalItems={cart.total_items}/>
       <Products products={products} onAddToCart={handleAddToCart} />
 
 
