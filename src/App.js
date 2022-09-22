@@ -3,6 +3,7 @@ import Commerce, { commerce } from './lib/Commerce'
 
 import Products from './Components/Products/Products'
 import Navbar from "./Components/Navbar/Navbar"
+import Cart from './Components/Cart/Cart'
 import { useState, useEffect } from 'react'
 
 const App = () => {
@@ -42,9 +43,9 @@ console.log(cart)
   return (
     <div>
       <Navbar fixed="top"  totalItems={cart.total_items}/>
-      <Products products={products} onAddToCart={handleAddToCart} />
+      {/* <Products products={products} onAddToCart={handleAddToCart} />*/}
 
-
+  <Cart cart= {cart}/>
     </div>
   )
 }

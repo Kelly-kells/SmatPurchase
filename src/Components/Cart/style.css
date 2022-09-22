@@ -1,0 +1,16 @@
+.emptyBtn{
+
+    min-width: '150px';
+    margin-bottom: 5px;
+}
+
+.cardDetails{
+    display: flex;
+    margin-top: 10%;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.checkoutBtn{
+    min-width: 50px;
+}
