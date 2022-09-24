@@ -42,7 +42,7 @@ console.log(cart)
 
   return (
     <div>
-      <Navbar fixed="top"  totalItems={cart.total_items}/>
+      <Navbar fixed="top"  />
       {/* <Products products={products} onAddToCart={handleAddToCart} />*/}
 
   <Cart cart= {cart}/>
